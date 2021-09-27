@@ -53,3 +53,4 @@ appendElements(bannerText, title);
 appendElements(bannerText, subtitle);
 appendElements(bannerText, startBtnLink);
 appendElements(startBtnLink, startBtn);
+
