@@ -1,0 +1,84 @@
+body {
+    background-color: black;
+    color: #FFFFFF;
+}
+
+.wrapper {
+    /* display: flex;
+    flex-direction: column; */
+    width: 140px;
+    height: 45px;
+}
+
+.selectBox {
+    position: relative;
+    cursor: pointer;
+}
+
+.selectBox select {
+    width: 140px;
+    height: 45px;
+    /* width: 100%;
+    height: 100%; */
+    /* font-weight: bold; */
+    
+}
+
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#checkboxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 14px;
+    width: calc(160px - 14px);
+    height: calc(140px - 14px);
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    margin-top: 14px;
+}
+
+#checkboxes {
+    display: none;
+}
+
+#checkboxes label {
+    display: block;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+#checkboxes label input[type="checkbox"] {
+    /* display: none; */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    /* margin-left: 20px; */
+}
+
+.fake-checkbox {
+    box-sizing: border-box;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+    margin-left: -20px;
+}
+
+.fake-checkbox:hover {
+    border: 1px solid #3FC4FD; 
+}
+
+.input-checkbox:checked + .fake-checkbox {
+    border: none;
+    background-image: url(./assets/checkboxsvg.svg);
+}

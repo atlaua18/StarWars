@@ -1,8 +1,8 @@
 import {
-    appendElements,
     addStyleClass,
     createHTMLElement,
-} from "./utils/utils.js";
+    appendElements,
+} from "./../utils/utils.js";
 
 const root = document.getElementById("root");
 
@@ -37,8 +37,8 @@ for (let item of navbarItems) {
     appendElements(navbarLi, navbarLink);
 }
 
-backgroundImg.setAttribute("src", "./assets/bg_2.png");
-logo.setAttribute("src", "./assets/logo.png");
+backgroundImg.setAttribute("src", "../assets/bg_2.png");
+logo.setAttribute("src", "../assets/logo.png");
 logoLink.setAttribute("href", "/index.html");
 
 // const logo = new Image(152, 90);
